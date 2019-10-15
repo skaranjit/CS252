@@ -4,8 +4,9 @@
 
 using namespace std;
 
-integerManipulation::integerManipulation(long long n = 0){
+integerManipulation::integerManipulation(long long n){
     num =n;
+    reverseNum();
 }
 void integerManipulation::setNum(long long n){
     num =n;
@@ -19,8 +20,8 @@ void integerManipulation::reverseNum(){
     stringstream ss;
     ss<<num;
     ss>>n;
-    int len = n.length()
-    for (int i=0;i<len;i++){
+    int len = n.length();
+    for (signed int i=0;i<len;i++){
         swap(n[i],n[len-i-1]);
     }
     ss.clear();
@@ -34,7 +35,7 @@ void integerManipulation::classifyDigits(){
     ss<<num;
     ss>>n;
     ss.clear();
-    for (int i=0;i<n.length();i++){
+    for (unsigned int i=0;i<n.length();i++){
         int x;
         ss << n[i];
         ss >> x;
@@ -52,7 +53,7 @@ int integerManipulation::getOddsCount(){
     return oddsCount;
 }
 int integerManipulation::getEvensCount(){
-    return eventsCount;
+    return evensCount;
 }
 int integerManipulation::getZerosCount(){
     return zerosCount;
@@ -64,10 +65,12 @@ int integerManipulation::sumDigits(){
     ss>>n;
     ss.clear();
     int sum;
-    for (int i=0;i<n.length();i++){
+    for (unsigned int i=0;i<n.length();i++){
         int x;
         ss << n[i];
         ss >> x;
         ss.clear();
         sum += x;
+}
+    return sum;
 }

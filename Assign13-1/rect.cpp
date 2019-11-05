@@ -41,13 +41,15 @@ bool rectangleType::operator<=(const rectangleType& rect) const{
     
 }
 rectangleType rectangleType::operator++(){
-    ++l;
-    ++w;
+    
+    l = l +1;
+    w = w + 1;
+    return *this; 
 }
 rectangleType rectangleType::operator++(int j){
     rectangleType temp = *this;
-    l++;
-    w++;
+    l = l + j;
+    w = w + j;
     
     return temp;
 }
@@ -59,8 +61,8 @@ rectangleType rectangleType::operator--(){
 }
 rectangleType rectangleType::operator--(int j){
     rectangleType temp = *this;
-    l++;
-    w++;
+    l = l - j;
+    w = w -j ;
     return temp;
 }
 

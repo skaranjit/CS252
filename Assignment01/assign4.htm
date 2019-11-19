@@ -1,0 +1,86 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <title>CSIS 252 Assignment #1</title>
+</head>
+<body>
+<b><font size=+1>CSIS 252 - Fall 2019</font></b>
+<br><b><font size=+1>Assignment #1</font></b>
+<br><b><font size=+1>Due Tuesday, November 19 @ noon.</font></b>
+<p>The purpose of this program is array processing and using functions.
+   Write a C++ program on smaug to process student test scores
+   outputting results for each student followed by summary information
+   for the class as a whole.   
+<p>Input is from the keyboard and consists of the following
+   <ul>
+   <li>Maximum score (int) - the maximum number of points possible.
+   <li>Student test scores (int) read until the sentinel value -1 is input.
+       All student test scores are to be stored in an array of int
+   </ul>
+
+<p>Following the input, output is to the screen and consists of the following
+   <ul>
+   <li>Each student test score (int), percentage (floating point) and 
+       letter grade (char) in tabular form.  Each of the 3 columns should
+       labeled and line up nicely with the percentage formatted to 2 
+       decimal places.  The scores will be in descending order so the
+       array must be sorted. The letter grade is calculated as 
+       90%, 80%, 70%, 60% for A B C D. Below 60% is an F.  Click
+       <a href="tabular.txt">HERE</a> for an example of what I mean by tabular
+       form.
+   <li>Summary information neatly formatted including (and in the order given):
+       <ul>
+       <li>maximum score
+       <li>the number of students processed
+       <li>high score
+       <li>low score
+       <li>average score
+       <li>median score
+       </ul>
+   </ul>
+
+<h3>Requirements and Comments</h3>
+<ul>
+<li>Use constants for the sentinel value, grade ranges, and the array size.
+<li>Declare the size of the array to be 30.
+<li>Your <i>main</i> function consists only of function calls (click
+    <a href="main4.cpp">HERE</a> for my main function which you are welcome
+    to use).
+    <ol>
+    <li>read the data
+    <li>sort the test scores (click <a href="sort.cpp">HERE</a> for a sort
+        function)
+    <li>output student results
+    <li>output summary 
+    </ol>
+<li>The functions that output (#3 and #4 above) should call other 
+    functions.  Anything that requires more than one line of code should be 
+    a function.
+<li>You may assume all input is correct. In other words, if someone
+    entering input enters a float or a negative value or whatever for a
+    test score,
+    that's their problem and odd results are the fault of data
+    entry, not the program.  When I grade your program, I'll enter
+    only valid data.
+<li>All floating point output should be formatted to 2 decimal places.
+    Be wise in determining what is int and what is floating point.
+<li>Do not include extra fancy stuff in what you turn in.  You are
+    welcome to experiment with such stuff if you want, but it should
+    be removed for what you turn in.  What I mean is don't clear the
+    screen for each score, don't make me press return to continue,
+    etc. While such things may be nice, it just makes my grading task 
+    more difficult.
+<li>Clean up your directory (to prepare for handing it in), so that the
+    only file in your directory is <i><b>main.cpp</b></i>.
+<li>tar and compress your lastname4 directory creating 
+    lastname4.tar.gz and hand it in
+    to the assignment4 dropbox on D2L.
+<li>Be sure to use proper documentation, indentation, input prompts, and
+    labeling output.
+<li><b>RE-READ</b> this assignment sheet before you turn your program in to
+    make sure you are doing everything as described.
+
+</ul>
+
+</body>
+</html>
